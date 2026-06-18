@@ -10,9 +10,7 @@
 
     <div class="layout">
         <nav class="sidebar">
-            <div class="sidebar__header">
-                <span class="sidebar__logo">shanixxx</span>
-            </div>
+            <div class="sidebar__logo">shanixxx</div>
             <ul class="sidebar__nav">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="guide.html" class="active">Путеводитель</a></li>
@@ -20,133 +18,61 @@
         </nav>
 
         <main class="main">
-            <header class="topbar">
-                <span class="topbar__title">Путеводитель по проекту</span>
-            </header>
-
             <div class="content">
-                <h1>Путеводитель</h1>
-                <p class="subtitle">Всё, что нужно знать о проекте.</p>
+                <h1>Путеводитель по проекту</h1>
 
-                <section id="structure" class="section-block">
-                    <h2>Структура файлов</h2>
-                    <pre><code>C:\mimo\
-├── index.html          ← Главная страница
-├── guide.html          ← Этот путеводитель
+                <h2 id="structure">Структура файлов</h2>
+                <pre><code>├── index.html       ← Главная страница
+├── guide.html       ← Эта страница
 ├── css/
-│   └── style.css       ← Стили (цвета, расположение)
-├── README.md           ← Описание для GitHub
-└── GUIDE.md            ← Путеводитель (только для GitHub)</code></pre>
-                </section>
+│   └── style.css    ← Стили
+└── README.md        ← Описание для GitHub</code></pre>
 
-                <section id="edit" class="section-block">
-                    <h2>Как менять текст</h2>
-                    <div class="info-card">
-                        <p>Открой <code>index.html</code> или <code>guide.html</code> в текстовом редакторе.</p>
-                        <p>Измени текст между тегами. Сохрани — обнови страницу в браузере.</p>
-                    </div>
-                </section>
+                <h2 id="edit">Как менять текст</h2>
+                <p>Открой <code>index.html</code> или <code>guide.html</code> в любом текстовом редакторе. Замени текст между тегами. Сохрани — обнови страницу в браузере.</p>
 
-                <section id="update" class="section-block">
-                    <h2>Как обновлять сайт</h2>
-                    <div class="steps">
-                        <div class="step"><span class="step-num">1</span> Отредактируй файлы</div>
-                        <div class="step"><span class="step-num">2</span> Открой GitHub Desktop</div>
-                        <div class="step"><span class="step-num">3</span> Напиши сообщение коммита</div>
-                        <div class="step"><span class="step-num">4</span> Нажми Commit to main</div>
-                        <div class="step"><span class="step-num">5</span> Нажми Push origin</div>
-                    </div>
-                    <p>Через 1-2 минуты изменения появятся на сайте.</p>
-                </section>
+                <h2 id="update">Как обновлять сайт</h2>
+                <ol class="steps">
+                    <li>Отредактируй файлы</li>
+                    <li>Открой GitHub Desktop</li>
+                    <li>Напиши сообщение коммита</li>
+                    <li>Нажми Commit to master</li>
+                    <li>Нажми Push origin</li>
+                </ol>
+                <p>Через 1-2 минуты изменения появятся на сайте.</p>
 
-                <section id="terms" class="section-block">
-                    <h2>Термины</h2>
-                    <table class="terms-table">
-                        <tr>
-                            <th>Термин</th>
-                            <th>Значение</th>
-                        </tr>
-                        <tr>
-                            <td><strong>Git</strong></td>
-                            <td>Программа для сохранения версий кода</td>
-                        </tr>
-                        <tr>
-                            <td><strong>GitHub</strong></td>
-                            <td>Сайт, где хранятся проекты на Git</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Commit</strong></td>
-                            <td>Сохранение изменений (как "Сохранить" в Word)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>HTML</strong></td>
-                            <td>Язык разметки — структура сайта</td>
-                        </tr>
-                        <tr>
-                            <td><strong>CSS</strong></td>
-                            <td>Язык стилей — внешний вид сайта</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Хостинг</strong></td>
-                            <td>Сервер, где живёт сайт 24/7</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Домен</strong></td>
-                            <td>Адрес сайта в интернете</td>
-                        </tr>
-                    </table>
-                </section>
+                <h2 id="terms">Термины</h2>
+                <dl class="terms">
+                    <dt>Git</dt>
+                    <dd>Программа для сохранения версий кода</dd>
+                    <dt>GitHub</dt>
+                    <dd>Сайт, где хранятся проекты на Git</dd>
+                    <dt>Commit</dt>
+                    <dd>Сохранение изменений</dd>
+                    <dt>HTML</dt>
+                    <dd>Язык разметки — структура сайта</dd>
+                    <dt>CSS</dt>
+                    <dd>Язык стилей — внешний вид</dd>
+                    <dt>Хостинг</dt>
+                    <dd>Сервер, где живёт сайт 24/7</dd>
+                </dl>
 
-                <section id="deploy" class="section-block">
-                    <h2>Как разместить сайт в интернете</h2>
-                    <div class="concepts-grid">
-                        <div class="concept-card">
-                            <h3>Хостинг</h3>
-                            <p>Это как аренда квартиры для твоего сайта. Сервер работает 24/7 и показывает сайт всем.</p>
-                        </div>
-                        <div class="concept-card">
-                            <h3>Домен</h3>
-                            <p>Адрес сайта в интернете. Например, <code>shanixxx.github.io</code>.</p>
-                        </div>
-                        <div class="concept-card">
-                            <h3>GitHub Pages</h3>
-                            <p>Бесплатный хостинг. Загружаешь файлы на GitHub — сайт работает.</p>
-                        </div>
-                    </div>
-                </section>
+                <h2 id="deploy">Как сайт попал в интернет</h2>
+                <p>Используется <strong>GitHub Pages</strong> — бесплатный хостинг от GitHub.</p>
+                <ol class="steps">
+                    <li>Создан репозиторий <code>shanixxx.github.io</code></li>
+                    <li>Файлы загружены через GitHub Desktop</li>
+                    <li>В настройках репозитория включён GitHub Pages</li>
+                    <li>Сайт доступен по адресу <code>shanixxx.github.io</code></li>
+                </ol>
 
-                <section id="improve" class="section-block">
-                    <h2>Что можно улучшить</h2>
-                    <ul class="todo-list">
-                        <li>Добавить фотографию</li>
-                        <li>Изменить цвета в CSS</li>
-                        <li>Добавить новые страницы</li>
-                        <li>Настроить свой домен</li>
-                        <li>Добавить JavaScript</li>
-                    </ul>
-                </section>
-
-                <section class="section-block">
-                    <h2>Полезные ссылки</h2>
-                    <div class="links-grid">
-                        <a href="https://docs.github.com/en/pages" target="_blank" class="link-card">
-                            <strong>GitHub Pages</strong>
-                            <span>Документация</span>
-                        </a>
-                        <a href="https://developer.mozilla.org/ru/docs/Learn/HTML" target="_blank" class="link-card">
-                            <strong>MDN: HTML</strong>
-                            <span>Изучение HTML</span>
-                        </a>
-                        <a href="https://developer.mozilla.org/ru/docs/Learn/CSS" target="_blank" class="link-card">
-                            <strong>MDN: CSS</strong>
-                            <span>Изучение CSS</span>
-                        </a>
-                        <a href="https://desktop.github.com" target="_blank" class="link-card">
-                            <strong>GitHub Desktop</strong>
-                            <span>Скачать</span>
-                        </a>
-                    </div>
-                </section>
+                <h2 id="improve">Что можно улучшить</h2>
+                <ul class="simple-list">
+                    <li>Добавить фотографию</li>
+                    <li>Изменить цвета</li>
+                    <li>Добавить новые страницы</li>
+                    <li>Настроить свой домен</li>
+                </ul>
             </div>
         </main>
     </div>
