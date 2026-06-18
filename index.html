@@ -3,180 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Главная | shanixxx</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <p class="hero__greeting">Привет, я</p>
-            <h1 class="hero__name">[Имя]</h1>
-            <p class="hero__tagline">Начинаю путь в программировании</p>
-            <a href="#about" class="btn">Узнать больше</a>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Почему программирование</h2>
-            <p>Каждый день я пользуюсь приложениями и сайтами. И однажды понял: я хочу создавать свои.</p>
-            <p>Программирование — это про логику и творчество. Придумываешь идею — компьютер помогает реализовать.</p>
-            <div class="features">
-                <div class="feature">
-                    <h3>Творчество</h3>
-                    <p>Превращаю идеи в работающие проекты</p>
-                </div>
-                <div class="feature">
-                    <h3>Обучение</h3>
-                    <p>Каждый день узнаю что-то новое</p>
-                </div>
-                <div class="feature">
-                    <h3>Результат</h3>
-                    <p>Вижу плоды своих усилий</p>
-                </div>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar__header">
+                <span class="sidebar__logo">shanixxx</span>
             </div>
-        </div>
-    </section>
+            <ul class="sidebar__nav">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="guide.html">Путеводитель</a></li>
+            </ul>
+        </nav>
 
-    <section id="projects" class="section section--alt">
-        <div class="container">
-            <h2>Чем занимаюсь</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Сайт-визитка</h3>
-                    <p>Мой первый проект — этот сайт</p>
-                    <span class="tag">HTML / CSS</span>
+        <main class="main">
+            <header class="topbar">
+                <span class="topbar__title">shanixxx.github.io</span>
+            </header>
+
+            <div class="content">
+                <h1>Добро пожаловать</h1>
+                <p class="subtitle">Это мой личный сайт — первый проект в программировании.</p>
+
+                <div class="card-row">
+                    <a href="guide.html" class="card">
+                        <div class="card__icon">📖</div>
+                        <h3>Путеводитель</h3>
+                        <p>Как устроен проект, термины, как обновлять сайт</p>
+                    </a>
+                    <a href="#about" class="card">
+                        <div class="card__icon">💻</div>
+                        <h3>О проекте</h3>
+                        <p>Что это за сайт и зачем он нужен</p>
+                    </a>
                 </div>
-                <div class="project-card">
-                    <h3>Калькулятор</h3>
-                    <p>Простой калькулятор для повседневных задач</p>
-                    <span class="tag">JavaScript</span>
-                </div>
-                <div class="project-card">
-                    <h3>Список задач</h3>
-                    <p>Планировщик для организации дня</p>
-                    <span class="tag">В планах</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="deploy" class="section">
-        <div class="container">
-            <h2>Как разместить сайт в интернете</h2>
-            <p>Твой сайт пока живёт только на твоём компьютере. Чтобы другие могли его видеть, нужно загрузить на сервер.</p>
+                <section id="about" class="section-block">
+                    <h2>О проекте</h2>
+                    <p>Этот сайт — мой первый шаг в программировании. Я хочу учиться создавать приложения, сайты и игры. Пока что я осваиваю основы HTML и CSS.</p>
+                    <p>Всё началось с MiMoCode — инструмента, который помогает писать код на человеческом языке. С его помощью я создал этот сайт за один вечер.</p>
+                </section>
 
-            <div class="concepts">
-                <div class="concept">
-                    <h3>Хостинг</h3>
-                    <p>Это как аренда квартиры для твоего сайта. Сервер — это мощный компьютер, который работает 24/7 и показывает твой сайт всем, кто заходит по адресу.</p>
-                </div>
-                <div class="concept">
-                    <h3>Домен</h3>
-                    <p>Это адрес твоего сайта в интернете. Например, <code>moysait.ru</code> или <code>alexey.dev</code>. Без домена люди не смогут найти тебя.</p>
-                </div>
-                <div class="concept">
-                    <h3>Как загрузить файлы</h3>
-                    <p>Самый простой способ — GitHub Pages. Это бесплатно и не требует настройки сервера. Загружаешь файлы на GitHub — и сайт работает.</p>
-                </div>
-            </div>
-
-            <div class="checklist">
-                <h3>Чеклист для размещения</h3>
-                <ul>
-                    <li>Создай аккаунт на <a href="https://github.com" target="_blank">GitHub.com</a></li>
-                    <li>Установи Git и настрой его (MiMoCode поможет)</li>
-                    <li>Создай репозиторий для проекта</li>
-                    <li>Загрузи файлы сайта</li>
-                    <li>Включи GitHub Pages в настройках</li>
-                    <li>Готово! Сайт доступен по адресу</li>
-                </ul>
-            </div>
-
-            <div class="tip">
-                <p><strong>Совет:</strong> Когда будешь готов — попроси MiMoCode помочь с размещением. Он подскажет, что делать на каждом шаге.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="guide" class="section">
-        <div class="container">
-            <h2>Путеводитель по проекту</h2>
-
-            <div class="guide-block">
-                <h3>Структура файлов</h3>
-                <pre><code>C:\mimo\
-├── index.html          ← Структура и текст сайта
-├── css/
-│   └── style.css       ← Цвета, расположение, шрифты
-└── README.md           ← Описание для GitHub</code></pre>
-            </div>
-
-            <div class="guide-block">
-                <h3>Как менять текст</h3>
-                <p>Открой <code>index.html</code> в текстовом редакторе (Notepad++, VS Code). Замени <code>[Имя]</code> на своё имя. Сохрани — обнови страницу в браузере.</p>
-            </div>
-
-            <div class="guide-block">
-                <h3>Как обновлять сайт</h3>
-                <div class="steps">
-                    <div class="step"><span class="step-num">1</span> Отредактируй файлы</div>
-                    <div class="step"><span class="step-num">2</span> Открой GitHub Desktop</div>
-                    <div class="step"><span class="step-num">3</span> Напиши сообщение коммита</div>
-                    <div class="step"><span class="step-num">4</span> Нажми Commit to main</div>
-                    <div class="step"><span class="step-num">5</span> Нажми Push origin</div>
-                </div>
-                <p>Через 1-2 минуты изменения появятся на сайте.</p>
-            </div>
-
-            <div class="guide-block">
-                <h3>Термины</h3>
-                <div class="terms">
-                    <div class="term">
-                        <strong>Git</strong>
-                        <span>Программа для сохранения версий кода</span>
+                <section class="section-block">
+                    <h2>Технологии</h2>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">GitHub Pages</span>
                     </div>
-                    <div class="term">
-                        <strong>GitHub</strong>
-                        <span>Сайт, где хранятся проекты на Git</span>
-                    </div>
-                    <div class="term">
-                        <strong>Commit</strong>
-                        <span>Сохранение изменений (как "Сохранить" в Word)</span>
-                    </div>
-                    <div class="term">
-                        <strong>HTML</strong>
-                        <span>Язык разметки — структура сайта</span>
-                    </div>
-                    <div class="term">
-                        <strong>CSS</strong>
-                        <span>Язык стилей — внешний вид сайта</span>
-                    </div>
-                    <div class="term">
-                        <strong>Хостинг</strong>
-                        <span>Сервер, где живёт сайт 24/7</span>
-                    </div>
-                </div>
-            </div>
+                </section>
 
-            <div class="guide-block">
-                <h3>Что можно улучшить</h3>
-                <ul class="improve-list">
-                    <li>Добавить фотографию</li>
-                    <li>Изменить цвета в CSS</li>
-                    <li>Добавить новые секции</li>
-                    <li>Настроить свой домен</li>
-                </ul>
+                <section class="section-block">
+                    <h2>Статус</h2>
+                    <div class="status-card">
+                        <span class="status-dot status-dot--active"></span>
+                        <span>Сайт работает</span>
+                    </div>
+                    <div class="status-card">
+                        <span class="status-dot"></span>
+                        <span>Последнее обновление:一起装修</span>
+                    </div>
+                </section>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>Создано с помощью MiMoCode</p>
-        </div>
-    </footer>
+        </main>
+    </div>
 
 </body>
 </html>
