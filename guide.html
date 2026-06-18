@@ -10,32 +10,63 @@
 </head>
 <body>
 
+    <div class="sidebar-overlay"></div>
+
     <div class="layout">
         <nav class="sidebar">
             <div class="sidebar__header">
                 <div class="sidebar__logo">
-                    <svg class="sidebar__icon" viewBox="0 0 32 32" width="24" height="24">
-                        <rect width="32" height="32" rx="6" fill="#0969da"/>
-                        <text x="16" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="600" fill="#fff">S</text>
+                    <svg class="sidebar__icon" viewBox="0 0 32 32" width="28" height="28">
+                        <rect width="32" height="32" rx="8" fill="#0969da"/>
+                        <text x="16" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#fff">S</text>
                     </svg>
                     shanixxx
                 </div>
                 <button class="menu-btn" aria-label="Меню">
-                    <span></span><span></span><span></span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
                 </button>
             </div>
             <ul class="sidebar__nav">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="guide.html" class="active">Путеводитель</a></li>
+                <span class="sidebar__nav-label">Навигация</span>
+                <li>
+                    <a href="index.html">
+                        <svg class="sidebar__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="guide.html" class="active">
+                        <svg class="sidebar__nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        Путеводитель
+                    </a>
+                </li>
             </ul>
+            <div class="sidebar__footer">
+                <span class="sidebar__version">v1.0</span>
+            </div>
         </nav>
 
         <main class="main">
+            <div class="topbar">
+                <button class="menu-btn" aria-label="Меню">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <span class="topbar__title">Путеводитель</span>
+            </div>
+
             <div class="content">
                 <h1>Путеводитель по проекту</h1>
 
                 <nav class="toc">
-                    <strong>Содержание</strong>
+                    <span class="toc__title">Содержание</span>
                     <ul>
                         <li><a href="#structure">Структура файлов</a></li>
                         <li><a href="#edit">Как менять текст</a></li>
@@ -57,38 +88,43 @@
 └── README.md        ← Описание для GitHub</code></pre>
 
                 <h2 id="edit">Как менять текст</h2>
-                <p>Открой <code>index.html</code> или <code>guide.html</code> в любом текстовом редакторе. Замени текст между тегами. Сохрани — обнови страницу в браузере.</p>
+                <p>Открой <code>index.html</code> или <code>guide.html</code> в любом текстовом редакторе. Найди нужный текст между HTML-тегами и замени его. Сохрани файл — обнови страницу в браузере.</p>
+                <div class="info-box">
+                    Текст находится между открывающим и закрывающим тегом. Например, <code>&lt;p&gt;Текст здесь&lt;/p&gt;</code>.
+                </div>
 
                 <h2 id="update">Как обновлять сайт</h2>
                 <ol class="steps">
-                    <li>Отредактируй файлы</li>
+                    <li>Отредактируй файлы в папке проекта</li>
                     <li>Открой GitHub Desktop</li>
-                    <li>Напиши сообщение коммита</li>
-                    <li>Нажми Commit to master</li>
-                    <li>Нажми Push origin</li>
+                    <li>Напиши сообщение коммита (что изменил)</li>
+                    <li>Нажми <strong>Commit to master</strong></li>
+                    <li>Нажми <strong>Push origin</strong></li>
                 </ol>
                 <p>Через 1-2 минуты изменения появятся на сайте.</p>
 
                 <h2 id="terms">Термины</h2>
                 <dl class="terms">
                     <dt>Git</dt>
-                    <dd>Программа для сохранения версий кода</dd>
+                    <dd>Программа для сохранения версий кода. Как «Сохранить» в Word, но для всего проекта.</dd>
                     <dt>GitHub</dt>
-                    <dd>Сайт, где хранятся проекты на Git</dd>
+                    <dd>Сайт, где хранятся проекты на Git. Доступ из любого компьютера.</dd>
                     <dt>Commit</dt>
-                    <dd>Сохранение изменений</dd>
+                    <dd>Одно сохранение изменений. Фиксирует текущее состояние файлов.</dd>
                     <dt>HTML</dt>
-                    <dd>Язык разметки — структура сайта</dd>
+                    <dd>Язык разметки — структура и содержание страницы.</dd>
                     <dt>CSS</dt>
-                    <dd>Язык стилей — внешний вид</dd>
+                    <dd>Язык стилей — цвета, расположение, шрифты.</dd>
                     <dt>Хостинг</dt>
-                    <dd>Сервер, где живёт сайт 24/7</dd>
+                    <dd>Сервер, где живёт сайт 24/7. Без него сайт виден только тебе.</dd>
+                    <dt>Домен</dt>
+                    <dd>Адрес сайта в интернете. Например, <code>shanixxx.github.io</code>.</dd>
                 </dl>
 
                 <h2 id="deploy">Как сайт попал в интернет</h2>
                 <p>Используется <strong>GitHub Pages</strong> — бесплатный хостинг от GitHub.</p>
                 <ol class="steps">
-                    <li>Создан репозиторий <code>shanixxx.github.io</code></li>
+                    <li>Создан репозиторий <code>shanixxx.github.io</code> на GitHub</li>
                     <li>Файлы загружены через GitHub Desktop</li>
                     <li>В настройках репозитория включён GitHub Pages</li>
                     <li>Сайт доступен по адресу <code>shanixxx.github.io</code></li>
@@ -96,17 +132,18 @@
 
                 <h2 id="improve">Что можно улучшить</h2>
                 <ul class="simple-list">
-                    <li>Добавить фотографию</li>
-                    <li>Изменить цвета</li>
+                    <li>Добавить фотографию или аватар</li>
+                    <li>Изменить цветовую схему</li>
                     <li>Добавить новые страницы</li>
                     <li>Настроить свой домен</li>
+                    <li>Добавить больше JavaScript</li>
                 </ul>
             </div>
 
             <footer class="footer">
                 <div class="footer__inner">
                     <span>shanixxx · 2025</span>
-                    <a href="https://github.com/shanixxx" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://github.com/shanixxx" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </footer>
         </main>
