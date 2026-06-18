@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный сайт shanixxx — портфолио начинающего программиста">
     <title>shanixxx</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="layout">
         <nav class="sidebar">
-            <div class="sidebar__logo">shanixxx</div>
+            <div class="sidebar__header">
+                <div class="sidebar__logo">
+                    <svg class="sidebar__icon" viewBox="0 0 32 32" width="24" height="24">
+                        <rect width="32" height="32" rx="6" fill="#0969da"/>
+                        <text x="16" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="600" fill="#fff">S</text>
+                    </svg>
+                    shanixxx
+                </div>
+                <button class="menu-btn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
             <ul class="sidebar__nav">
                 <li><a href="index.html" class="active">Главная</a></li>
                 <li><a href="guide.html">Путеводитель</a></li>
@@ -35,7 +48,7 @@
 
                 <h2>О проекте</h2>
                 <p>Этот сайт — мой первый шаг в программировании. Здесь я учусь создавать веб-проекты с нуля.</p>
-                <p>Стек: HTML, CSS. Хостинг: GitHub Pages. Инструмент: MiMoCode.</p>
+                <p>Стек: HTML, CSS. Хостинг: GitHub Pages.</p>
 
                 <h2>Технологии</h2>
                 <div class="tags">
@@ -44,8 +57,16 @@
                     <span class="tag">GitHub Pages</span>
                 </div>
             </div>
+
+            <footer class="footer">
+                <div class="footer__inner">
+                    <span>shanixxx · 2025</span>
+                    <a href="https://github.com/shanixxx" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </footer>
         </main>
     </div>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
